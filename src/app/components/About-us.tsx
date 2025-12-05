@@ -10,10 +10,10 @@ export default function About() {
 
         {/* LEFT IMAGE WITH GRADIENT BORDER */}
         <div className="md:w-1/2 relative group">
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#211e59] to-yellow-500 opacity-30 blur-2xl group-hover:blur-3xl transition"></div>
+          <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#211e59]   group-hover:blur-sm transition"></div>
 
           <Image
-            src="/about-image.jpg"
+            src="/about2.jpg"
             alt="About Coders Logics"
             width={700}
             height={460}

@@ -2,11 +2,12 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Link from "next/link";
+// import Link from "next/link";
 import About from "../components/About-us";
 import MissionVision from "../components/MissionVision";
 import Hero from "../components/HeroSection";
-import Technologies from "../components/Technologies";
+// import Technologies from "../components/Technologies";
+import Portfolio from "../components/Portfolio";
 
 
 export default function AboutPage() {
@@ -16,9 +17,9 @@ export default function AboutPage() {
       {/* ======================================
           HERO SECTION
       ====================================== */}
-      <section className="relative w-full h-[550px] overflow-hidden">
+      <section className="relative w-full h-[350px] overflow-hidden">
         <Image
-          src="/coders-banner-2.jpg"
+          src="/networkabout.jpg"
           alt="About Mercy Foundation"
           fill
           className="object-cover scale-110"
@@ -34,17 +35,18 @@ export default function AboutPage() {
           className="absolute inset-0 flex flex-col justify-center px-6 max-w-6xl mx-auto text-white"
         >
           <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-xl leading-snug">
-           Carrying forward a legacy built on kindness, service, and compassion.
+          About Coders logics
           </h1>
 
-          <p className="mt-5 text-xl max-w-2xl opacity-90 tracking-wide">
-Dedicated to continuing Mr. B. J. Mehta’s lifelong mission of helping others.          </p>
+          
         </motion.div>
       </section>
      <About />
+     <Hero />
      <MissionVision />
-      <Hero />
-      <Technologies />
+      
+      {/* <Technologies /> */}
+      <Portfolio />
     </main>
   );
 }
