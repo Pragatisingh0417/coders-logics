@@ -35,7 +35,7 @@ export default function Services() {
         </h2>
         <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
           At Coders Logics, we provide end-to-end digital solutions to help your
-          business grow and succeed online.
+          business grow and succeed online..
         </p>
 
         <div className="mt-12 grid md:grid-cols-3 gap-8">
