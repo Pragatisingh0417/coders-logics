@@ -3,8 +3,9 @@ import { FaBullseye, FaLightbulb } from "react-icons/fa";
 
 export default function MissionVision() {
   return (
-    <section className="py-20 bg-[#211e59]">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+    <section className="py-20 relative h-[500px]  bg-[#211e59] bg-[url('/networkabout.jpg')] bg-cover bg-center  ">
+       <div className="absolute inset-0 bg-black/60"></div>
+      <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-white">
           Our Mission & Vision
         </h2>
