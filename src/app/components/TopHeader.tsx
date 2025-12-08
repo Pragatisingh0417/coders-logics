@@ -31,14 +31,14 @@ return (
 
 <div className="flex items-center gap-3">
 <Link href="#" target="_blank">
-<div className="w-9 h-9 rounded-full flex items-center justify-center bg-[#c69e37] hover:bg-[#98792a] transition">
+<div className="w-9 h-9 rounded-full flex items-center justify-center bg-[#c69e37] hover:bg-[#211e59] transition">
 <FaFacebookF className="text-[#f5f5f6]" size={15} />
 </div>
 </Link>
 
 
 <Link href="#" target="_blank">
-<div className="w-9 h-9 rounded-full flex items-center justify-center bg-[#c69e37] hover:bg-[#98792a] transition">
+<div className="w-9 h-9 rounded-full flex items-center justify-center bg-[#c69e37] hover:bg-[#211e59] transition">
 <FaLinkedinIn className="text-[#f4f4f4]" size={15} />
 </div>
 </Link>

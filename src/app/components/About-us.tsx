@@ -38,22 +38,22 @@ export default function About() {
           {/* HIGHLIGHTS */}
           <div className="mt-8 grid grid-cols-2 gap-6">
             <div className="flex items-center gap-3">
-              <FaLaptopCode className="text-yellow-600 text-2xl" />
+              <FaLaptopCode className="text-[#98792a] text-2xl" />
               <p className="text-gray-700">Next-gen Web & App Solutions</p>
             </div>
 
             <div className="flex items-center gap-3">
-              <FaCheckCircle className="text-yellow-600 text-2xl" />
+              <FaCheckCircle className="text-[#98792a] text-2xl" />
               <p className="text-gray-700">Scalable & Secure Systems</p>
             </div>
 
             <div className="flex items-center gap-3">
-              <FaUsers className="text-yellow-600 text-2xl" />
+              <FaUsers className="text-[#98792a] text-2xl" />
               <p className="text-gray-700">Experienced IT Experts</p>
             </div>
 
             <div className="flex items-center gap-3">
-              <FaAward className="text-yellow-600 text-2xl" />
+              <FaAward className="text-[#98792a] text-2xl" />
               <p className="text-gray-700">Client-Focused Approach</p>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function About() {
           {/* CTA BUTTON */}
           <Link
             href="/about"
-            className="mt-8 inline-block px-8 py-3 rounded-full bg-gradient-to-r from-[#211e59] to-yellow-600 text-white font-semibold shadow-lg hover:opacity-90 transition"
+            className="mt-8 inline-block px-8 py-3 rounded-full bg-gradient-to-r from-[#211e59] to-[#98792a] text-white font-semibold shadow-lg hover:opacity-90 transition"
           >
             Learn More →
           </Link>

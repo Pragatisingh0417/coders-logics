@@ -97,11 +97,11 @@ export default function Hero() {
               className="p-8 bg-white rounded-3xl shadow-lg border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition"
             >
               <div className=" flex gap-4">
-                <div className="text-yellow-600 text-4xl mb-4 ">
+                <div className="text-[#98792a] text-4xl mb-4 ">
                 {item.icon}
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-yellow-600">
+                <h3 className="text-xl font-semibold text-[#98792a]">
                 {item.title}
 
               </h3>

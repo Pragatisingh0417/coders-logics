@@ -16,11 +16,11 @@ export default function AboutFeaturesSection() {
         {/* CARD 1 */}
         <div
           className="p-10 rounded-2xl shadow-xl border-b-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
-          style={{ borderColor: "#c69e37" }}
+          style={{ borderColor: "#98792a" }}
         >
-          <Target className="w-20 h-20 text-[#c69e37]" />
+          <Target className="w-20 h-20 text-[#98792a]" />
 
-          <h2 className="text-2xl font-bold text-[#002244] mt-6">
+          <h2 className="text-2xl font-bold text-[#211e59] mt-6">
             Our Aim
           </h2>
 
@@ -32,9 +32,9 @@ export default function AboutFeaturesSection() {
 
         {/* CARD 2 */}
         <div className="p-10 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
-          <HandCoins className="w-20 h-20 text-[#c69e37]" />
+          <HandCoins className="w-20 h-20 text-[#98792a]" />
 
-          <h2 className="text-2xl font-bold text-[#002244] mt-6">
+          <h2 className="text-2xl font-bold text-[#211e59] mt-6">
             Company Vision
           </h2>
 
@@ -48,7 +48,7 @@ export default function AboutFeaturesSection() {
         <div className="p-10 rounded-2xl transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
           <Package className="w-20 h-20 text-[#c69e37]" />
 
-          <h2 className="text-2xl font-bold text-[#002244] mt-6">
+          <h2 className="text-2xl font-bold text-[#211e59] mt-6">
             The Procedure
           </h2>
 

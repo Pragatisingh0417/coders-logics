@@ -18,33 +18,31 @@ import {
   FaHardHat,
   FaPlane,
 } from "react-icons/fa";
+import React from "react";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+
+interface IndustryItem {
+icon: React.ReactNode;
+  title: string;
+}
 
 export default function Portfolio() {
-  const industries = [
+  const industries: IndustryItem[] = [
     { icon: <FaHospital />, title: "Healthcare & Home Care" },
-
     { icon: <FaDumbbell />, title: "Wellness, Fitness & Yoga" },
-
     { icon: <FaHome />, title: "Home Services & Construction" },
-
     { icon: <FaBuilding />, title: "Real Estate & Infrastructure" },
-
     { icon: <FaShoppingCart />, title: "E-commerce" },
-
     { icon: <FaUtensils />, title: "Food & Restaurant" },
-
     { icon: <FaTruck />, title: "Logistics & Transportation" },
-
     { icon: <FaHotel />, title: "Hotels, Travel & Tours" },
-
     { icon: <FaCalculator />, title: "Finance & Accounting" },
   ];
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
-    visible: (i) => ({
+    visible: (i: number = 0) => ({
       opacity: 1,
       y: 0,
       transition: {
@@ -78,14 +76,12 @@ export default function Portfolio() {
               whileHover={{ scale: 1.04 }}
             >
               <div className="flex items-center gap-3 justify-start">
-                <div className="text-4xl text-[#211e59]  ">
+                <div className="text-4xl text-[#211e59]">
                   {item.icon}
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-yellow-600">
-                    {item.title}
-                  </h3>
-                </div>
+                <h3 className="text-lg font-semibold text-[#98792a]">
+                  {item.title}
+                </h3>
               </div>
             </motion.div>
           ))}

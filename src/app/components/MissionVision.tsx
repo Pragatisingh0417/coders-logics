@@ -16,7 +16,7 @@ export default function MissionVision() {
         <div className="mt-12 grid md:grid-cols-2 gap-10">
           {/* Mission */}
           <div className="p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-100 border border-gray-200 hover:shadow-2xl transition">
-            <FaBullseye className="text-yellow-600 text-4xl mx-auto mb-4" />
+            <FaBullseye className="text-[#98792a] text-4xl mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-[#211e59]">Mission</h3>
             <p className="mt-3 text-gray-600 leading-relaxed">
               To empower businesses with innovative and scalable digital
@@ -27,7 +27,7 @@ export default function MissionVision() {
 
           {/* Vision */}
           <div className="p-8 rounded-3xl shadow-xl bg-gradient-to-br from-white to-gray-100 border border-gray-200 hover:shadow-2xl transition">
-            <FaLightbulb className="text-yellow-500 text-4xl mx-auto mb-4" />
+            <FaLightbulb className="text-[#98792a] text-4xl mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-[#211e59]">Vision</h3>
             <p className="mt-3 text-gray-600 leading-relaxed">
               To be a global leader in modern IT solutions by delivering

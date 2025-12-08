@@ -56,7 +56,7 @@ export default function Services() {
         </motion.div>
       </section>
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-[#211e59]">
+        <h2 className="text-3xl sm:text-4xl font-bold text-[#211e59] mt-10">
           Our Services
         </h2>
         <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
@@ -71,7 +71,7 @@ export default function Services() {
               className="bg-white p-8 rounded-3xl shadow-xl border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition"
             >
               <div className="flex items-center gap-6 mb-4 justify-start">
-                <div className="text-yellow-600 text-5xl ">{service.icon}</div>
+                <div className="text-[#98792a] text-5xl ">{service.icon}</div>
                 <div>
                   <h3 className="text-2xl font-semibold text-[#211e59] ">
                 {service.title}
@@ -84,7 +84,7 @@ export default function Services() {
               <p className="text-gray-600 mb-6">{service.description}</p>
               <Link
                 href={service.link}
-                className="inline-block text-yellow-600 font-semibold hover:underline"
+                className="inline-block text-[#98792a] font-semibold hover:underline"
               >
                 Learn More →
               </Link>

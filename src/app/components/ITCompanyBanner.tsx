@@ -30,7 +30,7 @@ return (
 
 
 <div className="mt-6 flex flex-col gap-4">
-<Link href="/contact" className="w-full"><button className="w-full px-6 py-3 rounded-full text-white  font-semibold shadow-lg transition" style={{ backgroundColor: "#c69e37" }}>Get Free Consultation</button></Link>
+<Link href="/contact" className="w-full"><button className="w-full px-6 py-3 rounded-full text-white  font-semibold shadow-lg transition" style={{ backgroundColor: "#98792a" }}>Get Free Consultation</button></Link>
 <Link href="/services" className="w-full"><button className="w-full px-6 py-3 rounded-full text-white font-semibold shadow-lg transition" style={{ backgroundColor: "#211e59" }}>Explore Our Services</button></Link>
 </div>
 

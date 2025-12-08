@@ -41,7 +41,7 @@ export default function Services() {
           {services.map((s, i) => (
             <div
               key={i}
-              className="group relative p-[2px] rounded-3xl bg-gradient-to-r from-[#211e59] to-yellow-600 shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="group relative p-[2px] rounded-3xl bg-gradient-to-r from-[#211e59] to-[#98792a] shadow-xl hover:shadow-2xl transition-all duration-300"
             >
               <div className="bg-white rounded-3xl p-8 h-full transition-all duration-300 group-hover:bg-gray-50 group-hover:-translate-y-2 ">
 
@@ -66,7 +66,7 @@ export default function Services() {
                 {/* Button */}
                 <Link href={s.link}>
                   <button className="mt-6 w-full py-3 rounded-full font-medium text-white 
-                  bg-gradient-to-r from-[#211e59] to-yellow-700 
+                  bg-gradient-to-r from-[#211e59] to-[#98792a]
                   hover:opacity-90 transition">
                     Know More →
                   </button>

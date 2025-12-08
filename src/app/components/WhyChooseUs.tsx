@@ -65,10 +65,10 @@ export default function WhyChooseUs() {
                 className="group relative bg-white p-7 rounded-2xl shadow-xl transition-transform cursor-pointer"
               >
                 {/* Animated gradient border */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#fb923c] to-[#facc15] opacity-0 group-hover:opacity-100 transition duration-300 -z-10"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#98792a] to-[#facc15] opacity-0 group-hover:opacity-100 transition duration-300 -z-10"></div>
 
                 {/* Icon with animation */}
-                <Icon className="w-12 h-12 mx-auto text-[#fb923c] group-hover:text-[#facc15] transition-colors duration-300" />
+                <Icon className="w-12 h-12 mx-auto text-[#98792a] group-hover:text-[#facc15] transition-colors duration-300" />
 
                 <h3 className="text-xl font-semibold text-[#211e59] mt-4">
                   {r.title}
