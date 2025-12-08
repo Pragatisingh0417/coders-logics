@@ -160,7 +160,7 @@ export default function Services() {
               <div className="relative">
                 <textarea
                   required
-                  rows="5"
+rows={5}
                   className="peer w-full border px-4 py-3 rounded-lg bg-transparent border-gray-300 focus:border-[#211e59] focus:ring-0 outline-none"
                 ></textarea>
                 <label className="absolute left-4 top-3 text-gray-500 transition-all peer-focus:-top-2 peer-focus:text-xs peer-focus:text-[#211e59] peer-valid:-top-2 peer-valid:text-xs bg-white px-1">
