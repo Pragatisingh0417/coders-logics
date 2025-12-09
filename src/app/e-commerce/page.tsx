@@ -7,27 +7,39 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "NEST BEDDING",
-    img: "/p-1.jpg",
-    url: "https://www.nestbedding.com/",
+    title: "Nestbedding",
+    img: "/mattresses.jpg",
+    url: "https://www.nestbedding.com",
   },
   {
     id: 2,
-    title: "Bright side",
-    img: "/p-2.webp",
-    url: "https://www.brightside.com/",
+    title: "Dental Herb",
+    img: "/dentalherbal.webp",
+    url: "https://www.dentalherb.com/ ",
   },
   {
     id: 3,
-    title: "Spa & Wellness",
-    img: "/p-3.webp",
-    url: "https://spaandwellness.com.au/",
+    title: "Toni Guy",
+    img: "/dudo.webp",
+    url: "https://toniandguy.com/",
   },
   {
     id: 4,
-    title: "Total Fitness",
-    img: "/p-4.jpg",
-    url: "https://www.totalfitness.co.uk/",
+    title: "Moon oral beauty",
+    img: "/moon.webp",
+    url: "https://moonoralbeauty.com/ ",
+  },
+  {
+    id: 4,
+    title: "Chubbies Shorts",
+    img: "/chubbiesshorts.webp",
+    url: "https://www.chubbiesshorts.com/ ",
+  },
+  {
+    id: 4,
+    title: "Bite ToothPaste",
+    img: "/bite.webp",
+    url: "https://bitetoothpastebits.com/",
   },
 ];
 
@@ -38,7 +50,7 @@ export default function Ecommerce() {
       {/* ---------------- Hero Section ---------------- */}
       <div className="relative w-full h-[280px] md:h-[380px] mb-16 overflow-hidden">
         <Image
-          src="/contact-banner.jpg"
+          src="/e-combanne.jpeg"
           alt="Healthcare Banner"
           fill
           className="object-cover brightness-[0.55] scale-105"

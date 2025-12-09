@@ -46,38 +46,38 @@ export default function Header() {
                 href="/projects/portfolio-2"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-Home Services & Construction              </Link>
+                Home Services & Construction              </Link>
               <Link
-                href="/projects/portfolio-2"
+                href="/realestate"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-             Real Estate & Infrastructure
+                Real Estate & Infrastructure
               </Link>
               <Link
                 href="/e-commerce"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-E-commerce              </Link>
+                E-commerce              </Link>
               <Link
                 href="/restaurant-portfolio"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-Food & Restaurant              </Link>
-<Link
+                Food & Restaurant              </Link>
+              <Link
                 href="/projects/portfolio-2"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-Logistics & Transportation            </Link>
-<Link
+                Logistics & Transportation            </Link>
+              <Link
                 href="/hotel-tour-and-travel-portfolio"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-Hotels, Travel & Tours        </Link>
-<Link
+                Hotels, Travel & Tours        </Link>
+              <Link
                 href="/projects/portfolio-2"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-Finance & Accounting           </Link>
+                Finance & Accounting           </Link>
             </div>
           </div>
 
@@ -108,11 +108,10 @@ Finance & Accounting           </Link>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white w-full shadow-md px-6 space-y-4 transition-all duration-300 overflow-hidden ${
-          mobileMenu
+        className={`md:hidden bg-white w-full shadow-md px-6 space-y-4 transition-all duration-300 overflow-hidden ${mobileMenu
             ? "max-h-[600px] py-6 opacity-100"
             : "max-h-0 opacity-0 py-0"
-        }`}
+          }`}
       >
         <Link href="/" onClick={() => setMobileMenu(false)} className="block text-lg text-[#211e59]">
           Home
@@ -137,9 +136,8 @@ Finance & Accounting           </Link>
           </button>
 
           <div
-            className={`pl-4 mt-2 space-y-2 transition-all ${
-              projectDropdown ? "block" : "hidden"
-            }`}
+            className={`pl-4 mt-2 space-y-2 transition-all ${projectDropdown ? "block" : "hidden"
+              }`}
           >
             <Link
               href="/projects/portfolio-1"
