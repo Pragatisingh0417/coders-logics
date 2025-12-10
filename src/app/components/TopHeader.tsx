@@ -13,14 +13,14 @@ return (
 <div className="max-w-7xl mx-auto flex justify-between items-center py-2 px-4 text-sm">
 <div className="flex flex-wrap items-center gap-6">
 <div className="flex items-center gap-2">
-<FaPhoneAlt size={14} className="text-[#c69e37]" />
-<span className="text-white">+91 98765 43210</span>
+{/* <FaPhoneAlt size={14} className="text-[#c69e37]" /> */}
+{/* <span className="text-white">+91 98765 43210</span> */}
 </div>
 
 
 <div className="flex items-center gap-2">
-<MdEmail size={16} className="text-[#c69e37]" />
-<span className="text-white">abc@coderslogics.in</span>
+<MdEmail size={20} className="text-[#c69e37]" />
+<span className="text-white">info@coderslogics.com</span>
 </div>
 </div>
 
