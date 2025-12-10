@@ -7,34 +7,34 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "Three Village Inn",
-    img: "/hotal1.png",
-    url: "https://www.mirabelleatthreevillageinn.com/",
+    title: "Century 21 Global",
+    img: "/house-1.jpg",
+    url: "https://www.century21global.com/",
   },
   {
     id: 2,
-    title: "Lessings",
-    img: "/hotal2.png",
-    url: "https://www.lessingsfsm.com/",
+    title: "Struttand Parker",
+    img: "/Realestate.jpg",
+    url: "https://www.struttandparker.com/",
   },
   {
     id: 3,
-    title: "Tor Spark",
-    img: "/hotal3.png",
-    url: "https://torspark.co/",
+    title: "Benetas",
+    img: "/house3.jpg",
+    url: "https://reia.com.au/",
   },
   
 ];
 
-export default function HotelTourAndTravelPortfolio() {
+export default function Realestate() {
   return (
     <section className="min-h-screen bg-[#f6f6f6] pb-20">
 
       {/* ---------------- Hero Section ---------------- */}
       <div className="relative w-full h-[280px] md:h-[380px] mb-16 overflow-hidden">
         <Image
-          src="/hotal3.png"
-          alt="Healthcare Banner"
+          src="/Realestate.jpg"
+          alt="REAL ESTATE Banner"
           fill
           className="object-cover brightness-[0.55] scale-105"
         />
@@ -49,7 +49,8 @@ export default function HotelTourAndTravelPortfolio() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-extrabold text-white text-center drop-shadow-lg tracking-wide"
           >
-Hotel Tour And Travel Portfolio          </motion.h1>
+            REAL ESTATE
+          </motion.h1>
         </div>
       </div>
 

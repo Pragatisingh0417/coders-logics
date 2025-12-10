@@ -7,27 +7,27 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "EMPOWERING WELLNESS WORLDWIDE",
-    img: "/p-1.jpg",
-    url: "https://globalwellnessinstitute.org/",
+    title: "Visiting Gangels",
+    img: "/visiting.png",
+    url: "https://www.visitingangels.com/",
   },
   {
     id: 2,
-    title: "Bright side",
-    img: "/p-2.webp",
-    url: "https://www.brightside.com/",
+    title: "HomeCare Australia",
+    img: "/homecareaustria.png",
+    url: "https://www.homecareaustralia.com.au/",
   },
   {
     id: 3,
-    title: "Spa & Wellness",
-    img: "/p-3.webp",
-    url: "https://spaandwellness.com.au/",
+    title: "Benetas",
+    img: "/Benetas.png",
+    url: "https://www.benetas.com.au/",
   },
   {
     id: 4,
-    title: "Total Fitness",
-    img: "/p-4.jpg",
-    url: "https://www.totalfitness.co.uk/",
+    title: "Right At Home",
+    img: "/riseathome.png",
+    url: "https://www.rightathome.co.uk/",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function HealthcarePortfolio() {
       {/* ---------------- Hero Section ---------------- */}
       <div className="relative w-full h-[280px] md:h-[380px] mb-16 overflow-hidden">
         <Image
-          src="/contact-banner.jpg"
+          src="/healthcarebanner.webp"
           alt="Healthcare Banner"
           fill
           className="object-cover brightness-[0.55] scale-105"
