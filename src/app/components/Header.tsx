@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -10,15 +11,19 @@ export default function Header() {
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
       <div className="flex w-full items-center justify-between px-4 md:px-12 py-4">
         <div className="py-3">
-          <Link href="/">
-            <h4 className="text-2xl font-bold text-[#211e59]">
-              Coders <span className="text-[#98792a]">Logics</span>
-            </h4>
-          </Link>
-        </div>
+  <Link href="/">
+    <Image
+      src="/logo.jpg"        // your logo path inside public/
+      alt="Coders Logics"
+      width={300}            // adjust as needed
+      height={100}            // adjust as needed
+      className="object-contain"
+    />
+  </Link>
+</div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#211e59]">
+        <nav className="hidden md:flex items-center gap-10 text-[20px] font-bold text-[#211e59]">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/services">Services</Link>
@@ -43,7 +48,7 @@ export default function Header() {
                Fitness & Yoga
               </Link> */}
               <Link
-                href="/projects/portfolio-2"
+                href="/homeservices"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
                 Home Services & Construction              </Link>
@@ -59,12 +64,12 @@ export default function Header() {
               >
                 E-commerce              </Link>
               <Link
-                href="/restaurant-portfolio"
+                href="/food"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
                 Food & Restaurant              </Link>
               <Link
-                href="/projects/portfolio-2"
+                href="/logistics"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
                 Logistics & Transportation            </Link>
@@ -74,7 +79,7 @@ export default function Header() {
               >
                 Hotels, Travel & Tours        </Link>
               <Link
-                href="/projects/portfolio-2"
+                href="/Finence"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
                 Finance & Accounting           </Link>

@@ -10,7 +10,7 @@ const blogs = [
     slug: "why-modern-businesses-need-powerful-websites",
     description:
       "A well-designed website builds credibility, improves user engagement, and boosts conversions.",
-    img: "/blog-1.jpg",
+    img: "/coders-banner-1.jpg",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const blogs = [
     slug: "top-ui-ux-trends-2025",
     description:
       "From glassmorphism to 3D animations — trends that will redefine the digital experience.",
-    img: "/blog-2.jpg",
+    img: "/coders-banner-2.jpg",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const blogs = [
     slug: "how-seo-helps-your-business-grow",
     description:
       "SEO is the backbone of organic growth. Learn key strategies to rank higher and attract customers.",
-    img: "/blog-3.jpg",
+    img: "/chubbiesshorts.webp",
   },
 ];
 
