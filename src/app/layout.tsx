@@ -22,10 +22,25 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// export const metadata: Metadata = {
+//   title: "Coders Logics",
+//   template: "%s | Coders Logics",
+//   description: "Coders Logics",
+//   icons: {
+//     icon: "/fab.jpg",
+//   },
+// };
 export const metadata: Metadata = {
-  title: "Coders Logics",
-  description: "Coders Logics",
+  title: {
+    default: "Coders Logics",
+    template: "%s | Coders Logics",
+  },
+  description: "Web Development & Digital Solutions Company",
+  icons: {
+    icon: "/fab.jpg",
+  },
 };
+
 
 export default function RootLayout({
   children,

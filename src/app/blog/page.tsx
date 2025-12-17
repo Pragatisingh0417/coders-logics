@@ -26,7 +26,7 @@ const blogs = [
     slug: "how-seo-helps-your-business-grow",
     description:
       "SEO is the backbone of organic growth. Learn key strategies to rank higher and attract customers.",
-    img: "/chubbiesshorts.webp",
+    img: "/contact-banner.jpg",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function BlogPage() {
         {blogs.map((blog) => (
           <motion.a
             key={blog.id}
-            href={`/blog/${blog.slug}`}
+            href={`#`}
             className="group block bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-400 hover:-translate-y-2"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

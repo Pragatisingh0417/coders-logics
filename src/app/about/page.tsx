@@ -8,6 +8,7 @@ import MissionVision from "../components/MissionVision";
 import Hero from "../components/HeroSection";
 // import Technologies from "../components/Technologies";
 import Portfolio from "../components/Portfolio";
+import Teamsection from "../components/TeamSection"
 
 
 export default function AboutPage() {
@@ -44,7 +45,7 @@ export default function AboutPage() {
      <About />
      <Hero />
      <MissionVision />
-      
+      <Teamsection />
       {/* <Technologies /> */}
       <Portfolio />
     </main>

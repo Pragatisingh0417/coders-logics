@@ -83,7 +83,7 @@ export default function Services() {
                 </div>
                 <p>
                   <span className="font-semibold">Email:</span>{" "}
-                  info@yourdomain.com
+                  info@coderslogics.com
                 </p>
               </div>
 
