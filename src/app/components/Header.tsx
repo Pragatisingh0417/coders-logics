@@ -1,189 +1,128 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
-  const [mobileMenu, setMobileMenu] = useState(false);
-  const [projectDropdown, setProjectDropdown] = useState(false); // mobile dropdown
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
+
+  const closeAll = () => {
+    setMenuOpen(false);
+    setProjectsOpen(false);
+  };
 
   return (
-    <header className="w-full bg-white shadow-md sticky top-0 z-50">
-      <div className="flex w-full items-center justify-between px-4 md:px-12 py-4">
-        <div className="py-3">
-  <Link href="/">
-    <Image
-      src="/logo.jpg"        // your logo path inside public/
-      alt="Coders Logics"
-      width={300}            // adjust as needed
-      height={100}            // adjust as needed
-      className="object-contain"
-    />
-  </Link>
-</div>
+    <header className="sticky top-0 z-50 bg-white shadow-md">
+      {/* TOP BAR */}
+      <div className="flex items-center justify-between px-4 py-3 md:px-12">
+        {/* Logo */}
+        <Link href="/" onClick={closeAll}>
+          <Image
+            src="/logo.jpg"
+            alt="Coders Logics"
+            width={220}
+            height={70}
+            className="object-contain"
+            priority
+          />
+        </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-10 text-[20px] font-bold text-[#211e59]">
+        {/* Mobile Toggle */}
+        <button
+          className="md:hidden text-3xl text-[#211e59]"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center gap-8 font-semibold text-[#211e59]">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/services">Services</Link>
 
-          {/* Desktop Dropdown */}
           <div className="relative group cursor-pointer">
-            <span className="flex items-center gap-1">
-              Projects ▾
-            </span>
-
-            <div className="absolute left-0 top-6 bg-white shadow-md rounded-md py-2 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-              <Link
-                href="/healthcare&homecare"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                Healthcare & Wellness
-              </Link>
-              {/* <Link
-                href="/projects/portfolio-2"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-               Fitness & Yoga
-              </Link> */}
-              <Link
-                href="/homeservices"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                Home Services & Construction              </Link>
-              <Link
-                href="/realestate"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                Real Estate & Infrastructure
-              </Link>
-              <Link
-                href="/e-commerce"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                E-commerce              </Link>
-              <Link
-                href="/food"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                Food & Restaurant              </Link>
-              <Link
-                href="/logistics"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                Logistics & Transportation            </Link>
-              <Link
-                href="/hotel-tour-and-travel-portfolio"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                Hotels, Travel & Tours        </Link>
-              <Link
-                href="/Finence"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                Finance & Accounting           </Link>
+            <span className="flex items-center gap-1">Projects ▾</span>
+            <div className="absolute top-6 left-0 w-64 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+              {projectLinks()}
             </div>
           </div>
 
           <Link href="/blog">Blog</Link>
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/contact">Contact</Link>
 
           <Link href="/contact">
-            <button className="bg-[#211e59] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#98792a] transition">
+            <button className="bg-[#211e59] text-white px-5 py-2 rounded-full">
               Get a Quote
-            </button>
-          </Link>
-
-          <Link href="/contact">
-            <button className="bg-[#c69e37] text-white font-semibold px-6 py-2 rounded-full hover:bg-[#211e59] transition">
-              Get In Touch
             </button>
           </Link>
         </nav>
-
-        {/* Mobile Menu Icon */}
-        <button
-          className="md:hidden text-3xl text-[#211e59]"
-          onClick={() => setMobileMenu(!mobileMenu)}
-        >
-          ☰
-        </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* MOBILE MENU */}
       <div
-        className={`md:hidden bg-white w-full shadow-md px-6 space-y-4 transition-all duration-300 overflow-hidden ${mobileMenu
-            ? "max-h-[600px] py-6 opacity-100"
-            : "max-h-0 opacity-0 py-0"
-          }`}
+        className={`md:hidden transition-all duration-300 overflow-hidden bg-white ${
+          menuOpen ? "max-h-[1000px] border-t" : "max-h-0"
+        }`}
       >
-        <Link href="/" onClick={() => setMobileMenu(false)} className="block text-lg text-[#211e59]">
-          Home
-        </Link>
+        <div className="flex flex-col px-6 py-5 space-y-4 text-[17px] font-semibold text-[#211e59]">
+          <Link href="/" onClick={closeAll}>Home</Link>
+          <Link href="/about" onClick={closeAll}>About</Link>
+          <Link href="/services" onClick={closeAll}>Services</Link>
 
-        <Link href="/about" onClick={() => setMobileMenu(false)} className="block text-lg text-[#211e59]">
-          About
-        </Link>
-
-        <Link href="/services" onClick={() => setMobileMenu(false)} className="block text-lg text-[#211e59]">
-          Services
-        </Link>
-
-        {/* Mobile Dropdown */}
-        <div>
+          {/* MOBILE PROJECTS */}
           <button
-            onClick={() => setProjectDropdown(!projectDropdown)}
-            className="block text-lg text-[#211e59] w-full text-left flex justify-between items-center"
+            className="flex justify-between items-center"
+            onClick={() => setProjectsOpen(!projectsOpen)}
           >
             Projects
-            <span>{projectDropdown ? "▲" : "▼"}</span>
+            <span>{projectsOpen ? "▲" : "▼"}</span>
           </button>
 
-          <div
-            className={`pl-4 mt-2 space-y-2 transition-all ${projectDropdown ? "block" : "hidden"
-              }`}
-          >
-            <Link
-              href="/projects/portfolio-1"
-              onClick={() => setMobileMenu(false)}
-              className="block text-[#211e59]"
-            >
-              Portfolio 1
+          {projectsOpen && (
+            <div className="ml-4 flex flex-col gap-3 text-[16px] font-medium">
+              {projectLinks(closeAll)}
+            </div>
+          )}
+
+          <Link href="/blog" onClick={closeAll}>Blog</Link>
+          <Link href="/contact" onClick={closeAll}>Contact</Link>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col gap-3 pt-4">
+            <Link href="/contact" onClick={closeAll}>
+              <button className="w-full bg-[#211e59] text-white py-3 rounded-full">
+                Get a Quote
+              </button>
             </Link>
 
-            <Link
-              href="/projects/portfolio-2"
-              onClick={() => setMobileMenu(false)}
-              className="block text-[#211e59]"
-            >
-              Portfolio 2
+            <Link href="/contact" onClick={closeAll}>
+              <button className="w-full bg-[#fbbf24] text-[#211e59] py-3 rounded-full">
+                Get In Touch
+              </button>
             </Link>
           </div>
         </div>
-
-        <Link href="/blog" onClick={() => setMobileMenu(false)} className="block text-lg text-[#211e59]">
-          Blog
-        </Link>
-
-        <Link href="/contact" onClick={() => setMobileMenu(false)} className="block text-lg text-[#211e59]">
-          Contact Us
-        </Link>
-
-        <div className="w-full flex flex-col gap-4 pt-4">
-          <Link href="/contact" onClick={() => setMobileMenu(false)}>
-            <button className="w-full bg-[#211e59] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#1a1847] transition">
-              Get a Quote
-            </button>
-          </Link>
-
-          <Link href="/contact" onClick={() => setMobileMenu(false)}>
-            <button className="w-full bg-[#fbbf24] text-[#211e59] font-semibold px-6 py-3 rounded-full hover:bg-yellow-500 transition">
-              Get In Touch
-            </button>
-          </Link>
-        </div>
       </div>
     </header>
+  );
+}
+
+/* PROJECT LINKS REUSE */
+function projectLinks(onClick?: () => void) {
+  const cls = "block px-4 py-2 hover:bg-gray-100 rounded";
+  return (
+    <>
+      <Link href="/healthcare&homecare" onClick={onClick} className={cls}>Healthcare & Wellness</Link>
+      <Link href="/homeservices" onClick={onClick} className={cls}>Home Services</Link>
+      <Link href="/realestate" onClick={onClick} className={cls}>Real Estate</Link>
+      <Link href="/e-commerce" onClick={onClick} className={cls}>E-commerce</Link>
+      <Link href="/food" onClick={onClick} className={cls}>Food & Restaurant</Link>
+      <Link href="/logistics" onClick={onClick} className={cls}>Logistics</Link>
+      <Link href="/hotel-tour-and-travel-portfolio" onClick={onClick} className={cls}>Hotels & Travel</Link>
+      <Link href="/Finence" onClick={onClick} className={cls}>Finance</Link>
+    </>
   );
 }
