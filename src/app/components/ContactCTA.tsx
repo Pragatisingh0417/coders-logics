@@ -7,6 +7,7 @@ import Link from "next/link";
 export default function ContactCTA() {
 return (
 <section className="py-20 bg-gray-300 text-black text-center">
+    
 <div className="max-w-4xl mx-auto px-4">
 <h2 className="text-3xl sm:text-4xl font-bold">Ready to Start Your Project?</h2>
 <p className="mt-4 text-gray-600 max-w-2xl mx-auto">Contact our IT experts today and let's build innovative solutions together.</p>

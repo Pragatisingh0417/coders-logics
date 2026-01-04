@@ -83,8 +83,7 @@ export default function Services() {
                 </div>
                 <p>
                   <span className="font-semibold">Email:</span>{" "}
-                  info@coderslogics.com
-                </p>
+Info@coderslogics.com                </p>
               </div>
 
               <div className="flex gap-4 items-start">
@@ -92,8 +91,7 @@ export default function Services() {
                   <FaMapMarkerAlt className="text-xl" />
                 </div>
                 <p>
-                  <span className="font-semibold">Address:</span> Delhi NCR,
-                  India
+                  <span className="font-semibold">Address:</span> USA – Texas, Austin, TX 78701, USA
                 </p>
               </div>
 

@@ -1,53 +1,77 @@
 "use client";
 
+import Link from "next/link";
+import React from "react";
+import { motion, Variants } from "framer-motion";
 import {
   FaHospital,
-  FaDumbbell,
   FaHome,
-  FaSpa,
-  FaBroom,
-  FaTruck,
   FaBuilding,
   FaShoppingCart,
   FaUtensils,
+  FaTruck,
   FaHotel,
-  FaTools,
   FaCalculator,
-  FaCar,
-  FaLeaf,
-  FaHardHat,
-  FaPlane,
 } from "react-icons/fa";
-import React from "react";
-
-import { motion, Variants } from "framer-motion";
 
 interface IndustryItem {
-icon: React.ReactNode;
+  icon: React.ReactNode;
   title: string;
+  link: string;
 }
 
 export default function Portfolio() {
   const industries: IndustryItem[] = [
-    { icon: <FaHospital />, title: "Healthcare & Home Care" },
-    { icon: <FaDumbbell />, title: "Wellness, Fitness & Yoga" },
-    { icon: <FaHome />, title: "Home Services & Construction" },
-    { icon: <FaBuilding />, title: "Real Estate & Infrastructure" },
-    { icon: <FaShoppingCart />, title: "E-commerce" },
-    { icon: <FaUtensils />, title: "Food & Restaurant" },
-    { icon: <FaTruck />, title: "Logistics & Transportation" },
-    { icon: <FaHotel />, title: "Hotels, Travel & Tours" },
-    { icon: <FaCalculator />, title: "Finance & Accounting" },
+    {
+      icon: <FaHospital />,
+      title: "Healthcare & Wellness",
+      link: "/healthcare&homecare",
+    },
+    {
+      icon: <FaHome />,
+      title: "Home Services",
+      link: "/homeservices",
+    },
+    {
+      icon: <FaBuilding />,
+      title: "Real Estate & Infrastructure",
+      link: "/realestate",
+    },
+    {
+      icon: <FaShoppingCart />,
+      title: "E-commerce",
+      link: "/e-commerce",
+    },
+    {
+      icon: <FaUtensils />,
+      title: "Food & Restaurant",
+      link: "/food",
+    },
+    {
+      icon: <FaTruck />,
+      title: "Logistics & Transportation",
+      link: "/logistics",
+    },
+    {
+      icon: <FaHotel />,
+      title: "Hotels, Travel & Tours",
+      link: "/hotel-tour-and-travel-portfolio",
+    },
+    {
+      icon: <FaCalculator />,
+      title: "Finance & Accounting",
+      link: "/finance",
+    },
   ];
 
   const cardVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
-    visible: (i: number = 0) => ({
+    visible: (i: number) => ({
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.15,
-        duration: 0.5,
+        delay: i * 0.12,
+        duration: 0.45,
       },
     }),
   };
@@ -63,27 +87,30 @@ export default function Portfolio() {
           Delivering complete digital and IT solutions for multiple industry segments.
         </p>
 
-        <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
           {industries.map((item, index) => (
-            <motion.div
-              key={index}
-              className="p-8 bg-gray-50 rounded-2xl shadow hover:shadow-xl hover:-translate-y-1 transition text-center border"
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              custom={index}
-              whileHover={{ scale: 1.04 }}
-            >
-              <div className="flex items-center gap-3 justify-start">
-                <div className="text-4xl text-[#211e59]">
-                  {item.icon}
+            <Link key={index} href={item.link} className="block">
+              <motion.div
+                className="p-8 bg-gray-50 rounded-2xl shadow border
+                           hover:shadow-xl hover:-translate-y-1
+                           transition cursor-pointer"
+                variants={cardVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                custom={index}
+                whileHover={{ scale: 1.04 }}
+              >
+                <div className="flex items-center gap-4">
+                  <div className="text-4xl text-[#211e59]">
+                    {item.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-[#98792a]">
+                    {item.title}
+                  </h3>
                 </div>
-                <h3 className="text-lg font-semibold text-[#98792a]">
-                  {item.title}
-                </h3>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </div>

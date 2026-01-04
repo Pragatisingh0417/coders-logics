@@ -164,7 +164,7 @@ export default function AppDevelopmentPage() {
               <div key={i} className="bg-[#0e0f16] p-8 rounded-2xl shadow-lg border border-gray-700 text-white">
                 <h3 className="text-xl font-semibold mb-3">{s.title}</h3>
                 <p className="text-gray-300">{s.desc}</p>
-                <a href="/contact" className="inline-block mt-6 text-sm font-semibold text-blue-300 hover:text-blue-400">Learn More →</a>
+                {/* <a href="/contact" className="inline-block mt-6 text-sm font-semibold text-blue-300 hover:text-blue-400">Learn More →</a> */}
               </div>
             ))}
           </div>

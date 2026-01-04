@@ -122,7 +122,7 @@ function projectLinks(onClick?: () => void) {
       <Link href="/food" onClick={onClick} className={cls}>Food & Restaurant</Link>
       <Link href="/logistics" onClick={onClick} className={cls}>Logistics</Link>
       <Link href="/hotel-tour-and-travel-portfolio" onClick={onClick} className={cls}>Hotels & Travel</Link>
-      <Link href="/Finence" onClick={onClick} className={cls}>Finance</Link>
+      <Link href="/finance" onClick={onClick} className={cls}>Finance</Link>
     </>
   );
 }

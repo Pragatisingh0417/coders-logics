@@ -60,7 +60,7 @@ export default function About() {
 
           {/* CTA BUTTON */}
           <Link
-            href="/about"
+            href="/services"
             className="mt-8 inline-block px-8 py-3 rounded-full bg-gradient-to-r from-[#211e59] to-[#98792a] text-white font-semibold shadow-lg hover:opacity-90 transition"
           >
             Learn More →

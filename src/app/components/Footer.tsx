@@ -2,16 +2,32 @@
 import Link from "next/link";
 import { FaPhoneAlt, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
+import Image from "next/image";
 export default function Footer() {
 return (
-<footer className="bg-[#211e59] text-white pt-16 pb-10">
-<div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+<footer className="relative  text-white pt-16 pb-10 " >
+     <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{ backgroundImage: "url('/coders-banner-2.jpg')" }}
+  />
+
+  {/* Gradient Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-r from-[#211e59]/95 via-[#211e59]/90 to-black/80" />
+<div className="max-w-7xl mx-auto px-6 grid grid-cols-1 relative z-10 md:grid-cols-4 gap-10">
 <div>
-<h2 className="text-xl font-semibold mb-4 text-[#98792a]">Coders Logics</h2>
-<p className="text-gray-300 leading-relaxed">We are a full-stack IT solutions company providing digital services including website development, mobile app development, SEO, branding, and cloud solutions.</p>
+   <Image
+  src="/logofooter.png"
+  alt="Footer Logo"
+  width={200}
+  height={80}
+  className="w-[200px] bg-white h-auto"
+/>
+   
+{/* <h2 className="text-xl relative z-10 font-semibold mb-4 text-[#98792a]">Coders Logics</h2> */}
+<p className="text-gray-300 leading-relaxed mt-2">We are a full-stack IT solutions company providing digital services including website development, mobile app development, SEO, branding, and cloud solutions.</p>
 
 
-<div className="flex items-center gap-4 mt-6">
+<div className="flex relative z-10 items-center gap-4 mt-6">
 <Link href="#" target="_blank">
 <div className="w-10 h-10 rounded-full flex items-center justify-center bg-[#98792a] hover:bg-white hover:text-[#211e59] transition"><FaFacebookF size={18} /></div>
 </Link>
@@ -30,7 +46,6 @@ return (
 <li><Link href="/" className="hover:text-[#98792a]">Home</Link></li>
 <li><Link href="/about" className="hover:text-[#98792a]">About Us</Link></li>
 <li><Link href="/services" className="hover:text-[#98792a]">Services</Link></li>
-<li><Link href="/projects" className="hover:text-[#98792a]">Projects</Link></li>
 
 <li><Link href="/blog" className="hover:text-[#98792a]">Blog</Link></li>
 
@@ -42,12 +57,12 @@ return (
 <div>
 <h2 className="text-lg font-semibold mb-4 text-[#98792a]">Our Services</h2>
 <ul className="space-y-3 text-gray-300">
-<li className="hover:text-[#98792a] cursor-pointer">SEO (Search Engine Optimization)</li>
-<li className="hover:text-[#98792a] cursor-pointer">SMO (Social Media Optimization)</li>
-<li className="hover:text-[#98792a] cursor-pointer">Website Development</li>
-<li className="hover:text-[#98792a] cursor-pointer">App Development</li>
-<li className="hover:text-[#98792a] cursor-pointer">E-Commerce Solutions</li>
-<li className="hover:text-[#98792a] cursor-pointer">Branding & Digital Marketing</li>
+{/* <li className="hover:text-[#98792a] cursor-pointer"> <Link href="/digital-marketing" className="hover:text-[#98792a]">SEO </Link></li> */}
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/digital-marketing" className="hover:text-[#98792a]"> Digital Marketing </Link> </li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/website-development" className="hover:text-[#98792a]"> Website Development </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/app-development" className="hover:text-[#98792a]"> App Development </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/e-commerce" className="hover:text-[#98792a]">E-Commerce Solutions </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/digital-marketing" className="hover:text-[#98792a]">Branding & Digital Marketing </Link></li>
 </ul>
 </div>
 
@@ -56,8 +71,8 @@ return (
 <h2 className="text-lg font-semibold mb-4 text-[#98792a]">Contact Us</h2>
 <ul className="space-y-4 text-gray-300">
 <li className="flex items-center gap-3"><FaPhoneAlt size={16} className="text-[#98792a]" />+91 98765 43210</li>
-<li className="flex items-center gap-3"><MdEmail size={18} className="text-[#98792a]" />info@coderslogics.in</li>
-<li className="flex items-start gap-3"><MdLocationOn size={20} className="text-[#98792a] mt-1" /><span>Coders Logics, 2nd Floor, Technopark Plaza, New Delhi, India</span></li>
+<li className="flex items-center gap-3"><MdEmail size={18} className="text-[#98792a]" />info@coderslogics.com</li>
+<li className="flex items-start gap-3"><MdLocationOn size={20} className="text-[#98792a] mt-1" /><span> Texas, Austin, TX 78701, USA</span></li>
 </ul>
 </div>
 </div>

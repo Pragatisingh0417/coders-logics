@@ -5,7 +5,7 @@ import { Target, HandCoins, Package } from "lucide-react";
 export default function AboutFeaturesSection() {
   return (
     <section className="w-full py-20 bg-white relative">
-      
+
       {/* Soft background glow like screenshot */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="w-[90%] h-[90%] mx-auto blur-3xl opacity-20 bg-gray-200 rounded-full"></div>
@@ -25,8 +25,7 @@ export default function AboutFeaturesSection() {
           </h2>
 
           <p className="text-gray-600 mt-3 leading-relaxed">
-            There creepeth darkness him wherein a the signs face unto best
-            seasons female were they're dominion. Brought gathered whales was.
+            Our aim at Coders Logics is to deliver smart, scalable, and result-oriented technology solutions that help businesses grow faster and stronger. We focus on quality, clarity, and real business impact — not just code.
           </p>
         </div>
 
@@ -39,8 +38,7 @@ export default function AboutFeaturesSection() {
           </h2>
 
           <p className="text-gray-600 mt-3 leading-relaxed">
-            There creepeth darkness him wherein a the signs face unto best
-            seasons female were they're dominion. Brought gathered whales was.
+            Our vision is to become a globally trusted IT partner for startups and growing businesses by delivering reliable, innovative, and future-ready digital solutions with complete transparency.
           </p>
         </div>
 
@@ -53,9 +51,13 @@ export default function AboutFeaturesSection() {
           </h2>
 
           <p className="text-gray-600 mt-3 leading-relaxed">
-            There creepeth darkness him wherein a the signs face unto best
-            seasons female were they're dominion. Brought gathered whales was.
-          </p>
+            We follow a simple and effective workflow:
+            Understand your goals and requirements
+            Plan the right strategy and roadmap
+            Build clean, scalable solutions
+            Test for quality and performance
+            Deliver on time
+            Support for long-term success          </p>
         </div>
 
       </div>

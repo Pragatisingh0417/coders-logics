@@ -30,9 +30,7 @@ export default function MissionVision() {
             <FaLightbulb className="text-[#98792a] text-4xl mx-auto mb-4" />
             <h3 className="text-2xl font-semibold text-[#211e59]">Vision</h3>
             <p className="mt-3 text-gray-600 leading-relaxed">
-              To be a global leader in modern IT solutions by delivering
-              high-performance digital products that transform businesses and
-              inspire innovation.
+Our vision is to become a globally trusted IT partner for startups and growing businesses by delivering reliable, innovative, and future-ready digital solutions with complete transparency.
             </p>
           </div>
         </div>
