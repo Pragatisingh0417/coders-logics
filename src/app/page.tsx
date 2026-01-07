@@ -6,6 +6,8 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import ContactCTA from "./components/ContactCTA";
 import AboutFeaturesSection from "./components/AboutFeaturesSection";
 import Testimonials from "./components/Testimonials";
+import FAQSection from "./components/FAQSection";
+import CodersLogicsDifferentSection from "./components/CodersLogicsDifferentSection";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
      <Services /> 
      <AboutFeaturesSection />    
      <WhyChooseUs />
+     <CodersLogicsDifferentSection />
+     <FAQSection />
      <Testimonials />
      <ContactCTA />
     

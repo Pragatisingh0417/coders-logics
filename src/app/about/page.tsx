@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-// import Link from "next/link";
+import Link from "next/link";
 import About from "../components/About-us";
 import MissionVision from "../components/MissionVision";
 import Hero from "../components/HeroSection";
-// import Technologies from "../components/Technologies";
 import Portfolio from "../components/Portfolio";
 import Teamsection from "../components/TeamSection"
+import GrowthCTA from "../components/GrowthCTA";
 
 
 export default function AboutPage() {
@@ -46,8 +46,8 @@ export default function AboutPage() {
      <Hero />
      <MissionVision />
       <Teamsection />
-      {/* <Technologies /> */}
       <Portfolio />
+      <GrowthCTA />
     </main>
   );
 }

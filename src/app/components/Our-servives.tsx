@@ -1,82 +1,174 @@
 "use client";
-import { FaBullhorn, FaLaptopCode, FaMobileAlt } from "react-icons/fa";
-import Link from "next/link";
 
-const services = [
+import React from "react";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { IconType } from "react-icons";
+import {
+  FaSearch,
+  FaCode,
+  FaMobileAlt,
+  FaShoppingCart,
+  FaBullhorn,
+  FaShieldAlt,
+} from "react-icons/fa";
+
+/* ---------- TYPES ---------- */
+interface ServiceItem {
+  icon: IconType;
+  title: string;
+  desc: string;
+  link: string;
+}
+
+/* ---------- DATA ---------- */
+const services: ServiceItem[] = [
   {
-    title: "Digital Marketing",
-    desc: "Boost your brand with SEO, SMO, ads & complete digital strategy.",
-    icon: <FaBullhorn size={30} />,
+    icon: FaCode,
+    title: "Custom Web Development",
+    desc:
+      "We build fast, scalable, and secure web applications using modern frameworks and clean architecture tailored to your business needs.",
+    link: "/web-development",
+  },
+  {
+    icon: FaMobileAlt,
+    title: "Mobile App Development",
+    desc:
+      "From idea to deployment, we create high-performance Android and iOS apps with intuitive UI and seamless user experience.",
+    link: "/mobile-app-development",
+  },
+  {
+    icon: FaShoppingCart,
+    title: "E-Commerce Solutions",
+    desc:
+      "We develop conversion-driven eCommerce platforms with secure payments, smooth checkout, and scalable backend systems.",
+    link: "/ecommerce-development",
+  },
+  {
+    icon: FaSearch,
+    title: "SEO & Performance Optimization",
+    desc:
+      "Improve visibility, speed, and rankings with technical SEO, performance optimization, and search-friendly architecture.",
+    link: "/seo-optimization",
+  },
+  {
+    icon: FaBullhorn,
+    title: "Digital Growth & Marketing",
+    desc:
+      "Data-driven digital strategies to grow traffic, leads, and conversions through PPC, analytics, and performance marketing.",
     link: "/digital-marketing",
   },
   {
-    title: "Website Development",
-    desc: "High-performance, responsive and modern websites.",
-    icon: <FaLaptopCode size={30} />,
-    link: "/website-development",
-  },
-  {
-    title: "App Development",
-    desc: "Native & cross-platform mobile apps for iOS & Android.",
-    icon: <FaMobileAlt size={30} />,
-    link: "/app-development",
+    icon: FaShieldAlt,
+    title: "Security & Maintenance",
+    desc:
+      "We ensure your applications stay secure, stable, and up-to-date with proactive monitoring, updates, and support.",
+    link: "/security-maintenance",
   },
 ];
 
-export default function Services() {
+/* ---------- COMPONENT ---------- */
+const OurServices: React.FC = () => {
   return (
-    <section className="py-20 bg-[#211e59]">
-      <div className="max-w-7xl mx-auto px-4 text-center">
+    <section className="flex flex-col items-center text-center space-y-16 px-6 sm:px-10 py-20">
 
-        {/* Heading */}
-        <h2 className="text-4xl font-bold bg-clip-text text-white ">
-          Our Services
+      {/* ---------- HEADING ---------- */}
+      <div className="max-w-7xl space-y-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#211e59] leading-tight">
+          Our Services{" "}
         </h2>
-        <p className="mt-4 text-gray-200 max-w-xl mx-auto">
-          We provide premium IT solutions to help businesses grow efficiently.
+
+        <span className="block h-1 w-24 mx-auto rounded bg-[#98792a]" />
+
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          At Coders Logics, we deliver end-to-end digital solutions designed
+          to scale, perform, and adapt to modern business challenges.
         </p>
+      </div>
 
-        {/* Cards */}
-        <div className="mt-14 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-          {services.map((s, i) => (
-            <div
+      {/* ---------- SERVICES GRID ---------- */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl">
+
+        {services.map((service, i) => {
+          const Icon = service.icon;
+          const isPrimaryCard = i % 2 !== 0;
+
+          return (
+            <motion.div
               key={i}
-              className="group relative p-[2px] rounded-3xl bg-gradient-to-r from-[#211e59] to-[#98792a] shadow-xl hover:shadow-2xl transition-all duration-300"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className={`group rounded-2xl shadow-lg border border-gray-100
+                p-8 flex flex-col space-y-5 transition transform hover:-translate-y-2
+                ${
+                  isPrimaryCard
+                    ? "bg-[#211e59] text-white hover:bg-white hover:text-[#211e59]"
+                    : "bg-white text-gray-900 hover:bg-[#211e59] hover:text-white"
+                }
+              `}
             >
-              <div className="bg-white rounded-3xl p-8 h-full transition-all duration-300 group-hover:bg-gray-50 group-hover:-translate-y-2 ">
-
-                {/* Icon */}
-                <div className="flex text-center align-middle  gap-3 ">
-                <div className="h-12 w-12 rounded-2xl flex items-center justify-center 
-                bg-gradient-to-br from-[#211e59]/10 to-yellow-600/20 
-                text-[#211e59] shadow-inner ">
-                  {s.icon}
+              {/* ICON + TITLE */}
+              <div className="flex items-center gap-4">
+                <div
+                  className={`p-4 rounded-xl transition-transform duration-300 group-hover:scale-110
+                    ${
+                      isPrimaryCard
+                        ? "bg-white/20 group-hover:bg-[#98792a]/20"
+                        : "bg-[#98792a]/20 group-hover:bg-white/20"
+                    }
+                  `}
+                >
+                  <Icon
+                    className={`text-3xl transition duration-300
+                      ${
+                        isPrimaryCard
+                          ? "text-white group-hover:text-[#211e59]"
+                          : "text-[#98792a] group-hover:text-white"
+                      }
+                    `}
+                  />
                 </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#211e59]">{s.title}</h3>
-                </div>
-                </div>
 
-                {/* Title */}
-                
-
-                {/* Description */}
-                <p className="mt-3 text-gray-600">{s.desc}</p>
-
-                {/* Button */}
-                <Link href={s.link}>
-                  <button className="mt-6 w-full py-3 rounded-full font-medium text-white 
-                  bg-gradient-to-r from-[#211e59] to-[#98792a]
-                  hover:opacity-90 transition">
-                    Know More →
-                  </button>
-                </Link>
+                <h3 className="text-xl font-bold">
+                  {service.title}
+                </h3>
               </div>
-            </div>
-          ))}
-        </div>
+
+              {/* DESCRIPTION */}
+              <p
+                className={`text-base leading-relaxed
+                  ${
+                    isPrimaryCard
+                      ? "text-white/90 group-hover:text-gray-700"
+                      : "text-gray-700 group-hover:text-white/90"
+                  }
+                `}
+              >
+                {service.desc}
+              </p>
+
+              {/* CTA */}
+              <Link
+                href={service.link}
+                className={`mt-auto font-semibold inline-flex items-center gap-2 transition-colors
+                  ${
+                    isPrimaryCard
+                      ? "text-white group-hover:text-[#211e59]"
+                      : "text-[#211e59] group-hover:text-white"
+                  }
+                `}
+              >
+                Learn More →
+              </Link>
+            </motion.div>
+          );
+        })}
 
       </div>
     </section>
   );
-}
+};
+
+export default OurServices;
