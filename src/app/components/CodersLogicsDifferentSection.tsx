@@ -45,11 +45,11 @@ const stats: StatItem[] = [
     value: "2500+",
     label: "Projects Delivered",
   },
-  {
-    icon: FaLaptopCode,
-    value: "9+ Years",
-    label: "IT Industry Exposure",
-  },
+  // {
+  //   icon: FaLaptopCode,
+  //   value: "9+ Years",
+  //   label: "IT Industry Exposure",
+  // },
 ];
 
 /* ---------- COMPONENT ---------- */

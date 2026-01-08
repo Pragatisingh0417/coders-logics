@@ -155,21 +155,21 @@ function serviceLinks(onClick?: () => void, mobile = false) {
 
   return (
     <>
-      <Link href="/services/app-development" onClick={onClick} className={cls}>
+      <Link href="/app-development" onClick={onClick} className={cls}>
         <div>
           <p className="font-bold">App Development</p>
           {!mobile && <p className="text-sm text-gray-600">iOS & Android</p>}
         </div>
       </Link>
 
-      <Link href="/services/web-development" onClick={onClick} className={cls}>
+      <Link href="/website-development" onClick={onClick} className={cls}>
         <div>
           <p className="font-bold">Web Development</p>
           {!mobile && <p className="text-sm text-gray-600">Modern websites</p>}
         </div>
       </Link>
 
-      <Link href="/services/digital-marketing" onClick={onClick} className={cls}>
+      <Link href="/digital-marketing" onClick={onClick} className={cls}>
         <div>
           <p className="font-bold">Digital Marketing</p>
           {!mobile && <p className="text-sm text-gray-600">SEO & Growth</p>}
