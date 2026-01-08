@@ -125,7 +125,7 @@ function FAQItem({
         <span>{faq.q}</span>
         <FaChevronDown
           className={`transition-transform duration-300 ${
-            isOpen ? "rotate-180 text-red-600" : ""
+            isOpen ? "rotate-180 text-gray-800" : ""
           }`}
         />
       </button>
