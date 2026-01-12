@@ -13,27 +13,62 @@ export default function Services() {
   return (
     <section className="">
       {/* ================= HERO SECTION ================= */}
-      <section className="relative w-full h-[350px] overflow-hidden">
-        <Image
-          src="/networkabout.jpg"
-          alt="Contact Us"
-          fill
-          className="object-cover scale-110"
-        />
+     <section
+        className="relative flex items-center
+          min-h-[85vh] sm:min-h-[90vh] lg:min-h-[95vh]
+          bg-cover bg-center bg-no-repeat
+          text-white overflow-hidden"
+        style={{
+          backgroundImage: "url('/CONTACT-BANNER-CODERS.jpg')",
+        }}
+      >
+        {/* DARK OVERLAY (for text readability) */}
+        <div className="absolute inset-0 bg-gradient-to-r
+          from-[#0d0f2b]/90 via-[#211e59]/75 to-[#98792a]/70"></div>
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+        {/* Decorative glows */}
+        <div className="absolute -top-10 -left-10 h-52 w-52 bg-[#98792a]/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 h-72 w-72 bg-blue-400/20 rounded-full blur-3xl"></div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="absolute inset-0 flex flex-col justify-center px-6 max-w-6xl mx-auto text-white"
-        >
-          <h1 className="text-4xl md:text-6xl font-extrabold drop-shadow-xl leading-snug">
-            Contact Us
-          </h1>
-        </motion.div>
+        {/* CONTENT */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            className="max-w-2xl"
+          >
+            <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
+CONTACT US                   </h1>
+
+            <p className="mt-6 text-base sm:text-lg text-gray-200 leading-relaxed">
+Get in touch with Coders Logics to discuss your project, ideas, or business goals.
+Our team is ready to help you build scalable, high-performance digital solutions.
+
+            </p>
+
+            <div className="mt-8 flex flex-row gap-3 sm:gap-4">
+              <a
+                href="/contact"
+                className="inline-flex items-center justify-center
+                  px-8 py-4 rounded-full text-lg font-semibold
+                  bg-gradient-to-r from-[#98792a] to-[#facc15]
+                  text-[#0d0f2b] shadow-lg hover:opacity-90 transition"
+              >
+                Start Your Project →
+              </a>
+
+              <a
+                href="/about"
+                className="inline-flex items-center justify-center
+                  px-8 py-4 rounded-full text-lg font-semibold
+                  border border-white/40 hover:bg-white/10 transition"
+              >
+                Know More
+              </a>
+            </div>
+          </motion.div>
+        </div>
       </section>
 
       {/* ================= CONTACT CONTENT ================= */}
@@ -177,6 +212,41 @@ rows={5}
           </motion.form>
         </div>
       </div>
+
+      {/* ================= GOOGLE MAP ================= */}
+<section className="w-full bg-gray-50 py-20">
+  <div className="max-w-7xl mx-auto px-6">
+
+    <motion.h3
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="text-2xl md:text-3xl font-bold text-[#211e59] text-center mb-10"
+    >
+      Our Location
+    </motion.h3>
+
+    <motion.div
+      initial={{ opacity: 0, scale: 0.96 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="w-full h-[300px] sm:h-[400px] md:h-[450px]
+      rounded-3xl overflow-hidden shadow-xl border"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55129.92175294454!2d-97.79197209975901!3d30.276403500463008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5a09f79a589%3A0x4b5d42b7eafac86d!2sAustin%2C%20TX%2078701%2C%20USA!5e0!3m2!1sen!2sin!4v1768241378390!5m2!1sen!2sin"
+        className="w-full h-full border-0"
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </motion.div>
+
+  </div>
+</section>
+
     </section>
   );
 }

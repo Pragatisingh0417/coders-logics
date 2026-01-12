@@ -27,7 +27,7 @@ export default function TrustedBy() {
             <img
               src={src}
               alt="CodersLogics technology and trust badge"
-              className="w-full h-full object-contain grayscale hover:grayscale-0 transition"
+              className="w-full h-full object-contain  hover:grayscale-0 transition"
             />
           </div>
         ))}

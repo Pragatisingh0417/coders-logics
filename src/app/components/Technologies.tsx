@@ -67,13 +67,13 @@ const TechnologySection: React.FC = () => {
         <div className="max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#211e59] leading-tight">
             Technologies Powering{" "}
-            <span className="text-[#98792a]">Coders Logics</span>
+            <span className="text-[#98792a]">CODERS LOGICS</span>
           </h2>
 
           <span className="block w-24 h-1 bg-[#211e59] mx-auto mt-4 rounded-full" />
 
           <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-            At Coders Logics, we use a carefully selected technology stack
+            At CODERS LOGICS, we use a carefully selected technology stack
             to build secure, scalable, and high-performing digital products.
             Our tools enable faster development, cleaner code, and long-term
             maintainability.

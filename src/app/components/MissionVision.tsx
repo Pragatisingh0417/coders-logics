@@ -10,7 +10,7 @@ export default function MissionVision() {
           Our Mission & Vision
         </h2>
         <p className="mt-3 text-white max-w-2xl mx-auto">
-          Coders Logics is driven by innovation, efficiency, and client success.
+          CODERS LOGICS is driven by innovation, efficiency, and client success.
         </p>
 
         <div className="mt-12 grid md:grid-cols-2 gap-10">

@@ -84,7 +84,7 @@ export default function Hero() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-[#211e59]">
-          What Makes Coders Logics Services Different??
+          What Makes CODERS LOGICS Services Different??
         </h2>
         <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
           Services is not just an idea — it's an initiative powered by technology to drive meaningful transformation.

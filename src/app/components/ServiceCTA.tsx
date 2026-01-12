@@ -26,7 +26,7 @@ const ServiceCTA: React.FC = () => {
           className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
         >
           Ready to Build a{" "}
-          <span className="text-[#98792a]">Scalable Digital Product</span>?
+          <span className="text-[#98792a]">Scalable Digital Product?</span>
         </motion.h2>
 
         {/* ---------- DESCRIPTION ---------- */}
@@ -37,7 +37,7 @@ const ServiceCTA: React.FC = () => {
           viewport={{ once: true }}
           className="mt-6 text-lg text-white/90 max-w-3xl mx-auto leading-relaxed"
         >
-          Partner with Coders Logics to design, develop, and launch secure,
+          Partner with CODERS LOGICS to design, develop, and launch secure,
           high-performance digital solutions tailored to your business goals.
           From strategy to long-term support — we’ve got you covered.
         </motion.p>

@@ -37,7 +37,7 @@ const GrowthCTA: React.FC = () => {
         </motion.h2>
 
         <p className="text-lg text-black max-w-3xl mx-auto">
-          Coders Logics helps startups and businesses design, build,
+          CODERS LOGICS helps startups and businesses design, build,
           launch, and scale high-performance digital products with
           long-term technical support.
         </p>

@@ -70,7 +70,7 @@ export default function CodersLogicsWebDesignTypes() {
           className="text-3xl md:text-5xl font-bold text-[#211e59]"
         >
           Website Design Approaches at{" "}
-          <span className="text-[#98792a]">Coders Logics</span>
+          <span className="text-[#98792a]">CODERS LOGICS</span>
         </motion.h2>
 
         <motion.p
@@ -80,7 +80,7 @@ export default function CodersLogicsWebDesignTypes() {
           viewport={{ once: true }}
           className="mt-6 text-lg text-gray-600 max-w-3xl mx-auto"
         >
-          We don’t believe in one-size-fits-all solutions. At Coders Logics, we
+          We don’t believe in one-size-fits-all solutions. At CODERS LOGICS, we
           design and develop websites using the right approach that aligns with
           your business goals, users, and future growth.
         </motion.p>

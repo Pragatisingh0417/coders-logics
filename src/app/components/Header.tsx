@@ -14,6 +14,7 @@ export default function Header() {
     const [packagesOpen, setPackagesOpen] = useState(false);
 
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const closeAll = () => {
     setMenuOpen(false);
@@ -37,7 +38,7 @@ export default function Header() {
       <div className="flex items-center justify-between px-4 py-3 md:px-12">
         {/* LOGO */}
         <Link href="/" onClick={closeAll}>
-          <Image src="/logo.jpg" alt="Coders Logics" width={220} height={70} />
+          <Image src="/logo.jpg" alt="CODERS LOGICS" width={220} height={70} />
         </Link>
 
         {/* MOBILE TOGGLE */}
@@ -117,11 +118,13 @@ export default function Header() {
           <Link href="/blog" className={navLinkClass("/blog")}>Blog</Link>
           <Link href="/contact" className={navLinkClass("/contact")}>Contact</Link>
 
-          <Link href="/contact">
-            <button className="bg-[#211e59] text-white px-6 py-2 rounded-full hover:bg-[#98792a]">
-              Get a Quote
-            </button>
-          </Link>
+          <button
+  onClick={() => setOpen(true)}
+  className="bg-[#211e59] text-white px-6 py-2 rounded-full hover:bg-[#98792a]"
+>
+  Get a Quote
+</button>
+
         </nav>
       </div>
 
@@ -180,6 +183,75 @@ export default function Header() {
           <Link href="/contact" onClick={closeAll}>Contact</Link>
         </div>
       </div>
+      {/* ================= GET QUOTE MODAL ================= */}
+{open && (
+  <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+
+    {/* Overlay */}
+    <div
+      onClick={() => setOpen(false)}
+      className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+    />
+
+    {/* Modal */}
+    <div className="relative bg-white w-full max-w-md mx-4 rounded-2xl p-8 shadow-xl z-10">
+
+      {/* Close Button */}
+      <button
+        onClick={() => setOpen(false)}
+        className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-xl"
+      >
+        ✕
+      </button>
+
+      <h3 className="text-2xl font-bold text-[#211e59]">
+        Get a Free Quote
+      </h3>
+
+      <p className="mt-2 text-gray-600 text-sm">
+        Share your requirements and our team will contact you shortly.
+      </p>
+
+      {/* FORM */}
+      <form className="mt-6 space-y-4">
+
+        <input
+          type="text"
+          placeholder="Your Name"
+          required
+          className="w-full px-4 py-3 border rounded-lg
+          focus:outline-none focus:ring-2 focus:ring-[#98792a]"
+        />
+
+        <input
+          type="email"
+          placeholder="Your Email"
+          required
+          className="w-full px-4 py-3 border rounded-lg
+          focus:outline-none focus:ring-2 focus:ring-[#98792a]"
+        />
+
+        <textarea
+          placeholder="Your Message"
+          rows={4}
+          required
+          className="w-full px-4 py-3 border rounded-lg
+          focus:outline-none focus:ring-2 focus:ring-[#98792a]"
+        />
+
+        <button
+          type="submit"
+          className="w-full bg-gradient-to-r from-[#98792a] to-[#facc15]
+          text-[#0d0f2b] py-3 rounded-full font-semibold
+          hover:opacity-90 transition"
+        >
+          Submit Request
+        </button>
+      </form>
+    </div>
+  </div>
+)}
+
     </header>
   );
 }

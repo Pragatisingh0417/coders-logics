@@ -14,7 +14,7 @@ export default function About() {
 
           <Image
             src="/about2.jpg"
-            alt="About Coders Logics"
+            alt="About CODERS LOGICS"
             width={700}
             height={460}
             className="relative rounded-3xl shadow-xl border border-white/20"

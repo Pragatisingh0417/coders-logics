@@ -17,13 +17,14 @@ export default function Home() {
       <ITCompanyBanner />
      <About />
      <Services /> 
+          <TrustedBy />
+
      <AboutFeaturesSection />    
      <WhyChooseUs />
      <CodersLogicsDifferentSection />
      <HomePackagesSection />
      <FAQSection />
      <Testimonials />
-     <TrustedBy />
      <ContactCTA />
     
     </div>

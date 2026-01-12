@@ -25,7 +25,7 @@ export default function AboutFeaturesSection() {
           </h2>
 
           <p className="text-gray-600 mt-3 leading-relaxed">
-            Our aim at Coders Logics is to deliver smart, scalable, and result-oriented technology solutions that help businesses grow faster and stronger. We focus on quality, clarity, and real business impact — not just code.
+            Our aim at CODERS LOGICS is to deliver smart, scalable, and result-oriented technology solutions that help businesses grow faster and stronger. We focus on quality, clarity, and real business impact — not just code.
           </p>
         </div>
 

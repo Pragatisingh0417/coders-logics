@@ -81,7 +81,7 @@ const OurServices: React.FC = () => {
         <span className="block h-1 w-24 mx-auto rounded bg-[#98792a]" />
 
         <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-          At Coders Logics, we deliver end-to-end digital solutions designed
+          At CODERS LOGICS, we deliver end-to-end digital solutions designed
           to scale, perform, and adapt to modern business challenges.
         </p>
       </div>

@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true }}
           className="text-3xl md:text-5xl font-bold text-white"
         >
-          Why Choose <span className="text-[#98792a]">Coders Logics</span>
+          Why Choose <span className="text-[#98792a]">CODERS LOGICS</span>
         </motion.h2>
 
         <motion.p

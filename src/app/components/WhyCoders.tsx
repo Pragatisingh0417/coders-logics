@@ -31,7 +31,7 @@ export function WhyCoders() {
       <div className="max-w-7xl mx-auto px-6 text-center">
 
         <h2 className="text-3xl md:text-5xl font-bold">
-          Why Choose <span className="text-[#98792a]">Coders Logics</span>
+          Why Choose <span className="text-[#98792a]">CODERS LOGICS</span>
         </h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mt-16">

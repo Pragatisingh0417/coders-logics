@@ -61,13 +61,13 @@ const CodersLogicsDifferentSection: React.FC = () => {
         {/* ---------- HEADING ---------- */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
           What Makes{" "}
-          <span className="text-[#211e59]">Coders Logics</span>{" "}
+          <span className="text-[#211e59]">CODERS LOGICS</span>{" "}
           Different?
         </h2>
 
         {/* ---------- DESCRIPTION ---------- */}
         <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-14 max-w-3xl mx-auto">
-          Coders Logics is not just a development company — it’s a
+          CODERS LOGICS is not just a development company — it’s a
           technology-driven team focused on building scalable, secure,
           and future-ready digital solutions. We combine real-world
           experience with agile execution to deliver measurable results.

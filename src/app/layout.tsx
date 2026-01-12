@@ -23,17 +23,17 @@ const geistMono = Geist_Mono({
 });
 
 // export const metadata: Metadata = {
-//   title: "Coders Logics",
-//   template: "%s | Coders Logics",
-//   description: "Coders Logics",
+//   title: "CODERS LOGICS",
+//   template: "%s | CODERS LOGICS",
+//   description: "CODERS LOGICS",
 //   icons: {
 //     icon: "/fab.jpg",
 //   },
 // };
 export const metadata: Metadata = {
   title: {
-    default: "Coders Logics",
-    template: "%s | Coders Logics",
+    default: "CODERS LOGICS",
+    template: "%s | CODERS LOGICS",
   },
   description: "Web Development & Digital Solutions Company",
   icons: {

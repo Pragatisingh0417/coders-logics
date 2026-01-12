@@ -33,7 +33,7 @@ const ServiceIntro: React.FC = () => {
               viewport={{ once: true }}
               className="mt-6 text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0"
             >
-              At Coders Logics, we design and develop secure, high-performance
+              At CODERS LOGICS, we design and develop secure, high-performance
               digital products tailored to your business goals. From startups
               to enterprises, our solutions are engineered for scalability,
               speed, and long-term success.
@@ -112,7 +112,7 @@ const ServiceIntro: React.FC = () => {
             <div className="relative w-full max-w-lg aspect-square">
               <Image
                 src="/e-combanne.jpeg"
-                alt="Coders Logics digital solutions"
+                alt="CODERS LOGICS digital solutions"
                 fill
                 className="object-contain"
                 priority
