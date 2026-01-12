@@ -28,28 +28,28 @@ const services: ServiceItem[] = [
     title: "Custom Web Development",
     desc:
       "We build fast, scalable, and secure web applications using modern frameworks and clean architecture tailored to your business needs.",
-    link: "/web-development",
+    link: "/website-development",
   },
   {
     icon: FaMobileAlt,
     title: "Mobile App Development",
     desc:
       "From idea to deployment, we create high-performance Android and iOS apps with intuitive UI and seamless user experience.",
-    link: "/mobile-app-development",
+    link: "/app-development",
   },
   {
     icon: FaShoppingCart,
     title: "E-Commerce Solutions",
     desc:
       "We develop conversion-driven eCommerce platforms with secure payments, smooth checkout, and scalable backend systems.",
-    link: "/ecommerce-development",
+    link: "/frameworks-and-ecommerce-solutions",
   },
   {
     icon: FaSearch,
     title: "SEO & Performance Optimization",
     desc:
       "Improve visibility, speed, and rankings with technical SEO, performance optimization, and search-friendly architecture.",
-    link: "/seo-optimization",
+    link: "/digital-marketing",
   },
   {
     icon: FaBullhorn,
@@ -60,10 +60,10 @@ const services: ServiceItem[] = [
   },
   {
     icon: FaShieldAlt,
-    title: "Security & Maintenance",
+    title: "IOS App Development",
     desc:
       "We ensure your applications stay secure, stable, and up-to-date with proactive monitoring, updates, and support.",
-    link: "/security-maintenance",
+    link: "/app-development",
   },
 ];
 

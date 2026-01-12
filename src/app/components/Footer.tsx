@@ -23,7 +23,6 @@ return (
   className="w-[200px] bg-white h-auto"
 />
    
-{/* <h2 className="text-xl relative z-10 font-semibold mb-4 text-[#98792a]">Coders Logics</h2> */}
 <p className="text-gray-300 leading-relaxed mt-2">We are a full-stack IT solutions company providing digital services including website development, mobile app development, SEO, branding, and cloud solutions.</p>
 
 
@@ -56,14 +55,34 @@ return (
 
 <div>
 <h2 className="text-lg font-semibold mb-4 text-[#98792a]">Our Services</h2>
-<ul className="space-y-3 text-gray-300">
+<div className="flex"> 
+<div>
+  <ul className="space-y-3 text-gray-300">
 {/* <li className="hover:text-[#98792a] cursor-pointer"> <Link href="/digital-marketing" className="hover:text-[#98792a]">SEO </Link></li> */}
-<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/digital-marketing" className="hover:text-[#98792a]"> Digital Marketing </Link> </li>
-<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/website-development" className="hover:text-[#98792a]"> Website Development </Link></li>
-<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/app-development" className="hover:text-[#98792a]"> App Development </Link></li>
-<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/e-commerce" className="hover:text-[#98792a]">E-Commerce Solutions </Link></li>
-<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/digital-marketing" className="hover:text-[#98792a]">Branding & Digital Marketing </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/digital-marketing" className="hover:text-[#98792a]"> SEO Services </Link> </li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/website-development" className="hover:text-[#98792a]"> SMO  Services </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/app-development" className="hover:text-[#98792a]"> ORM Services </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/e-commerce" className="hover:text-[#98792a]">PPC Services </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/website-development" className="hover:text-[#98792a]">Website Development </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/website-development" className="hover:text-[#98792a]">UI-UX Development </Link></li>
+
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/website-development" className="hover:text-[#98792a]">PHP Development </Link></li>
+
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/website-development" className="hover:text-[#98792a]">Wordpress Development </Link></li>
+
+
 </ul>
+</div>
+<div><ul className="space-y-3 text-gray-300">
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/frameworks-and-ecommerce-solutions" className="hover:text-[#98792a]"> AngularJs Development  </Link> </li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/frameworks-and-ecommerce-solutions" className="hover:text-[#98792a]"> NodeJs Development </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/frameworks-and-ecommerce-solutions" className="hover:text-[#98792a]"> Laravel Development </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/frameworks-and-ecommerce-solutions" className="hover:text-[#98792a]">E-Commerce Solutions </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/app-development" className="hover:text-[#98792a]">IPhone App Development </Link></li>
+<li className="hover:text-[#98792a] cursor-pointer"> <Link href="/app-development" className="hover:text-[#98792a]">Android App Development </Link></li>
+
+</ul> </div>
+</div>
 </div>
 
 

@@ -8,6 +8,8 @@ import AboutFeaturesSection from "./components/AboutFeaturesSection";
 import Testimonials from "./components/Testimonials";
 import FAQSection from "./components/FAQSection";
 import CodersLogicsDifferentSection from "./components/CodersLogicsDifferentSection";
+import HomePackagesSection from "./components/HomePackagesSection";
+import TrustedBy from "./trustedBy/page";
 
 export default function Home() {
   return (
@@ -18,8 +20,10 @@ export default function Home() {
      <AboutFeaturesSection />    
      <WhyChooseUs />
      <CodersLogicsDifferentSection />
+     <HomePackagesSection />
      <FAQSection />
      <Testimonials />
+     <TrustedBy />
      <ContactCTA />
     
     </div>
