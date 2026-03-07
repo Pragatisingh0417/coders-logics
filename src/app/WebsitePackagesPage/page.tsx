@@ -10,7 +10,7 @@ export default function WebsitePackagesPage() {
   const packages = [
     {
       name: "Starter Website",
-      oneTime: 799,
+      oneTime: 499,
       yearly: 599,
       desc: "Best for startups and small businesses.",
       features: [
@@ -24,7 +24,7 @@ export default function WebsitePackagesPage() {
     },
     {
       name: "Business Website",
-      oneTime: 1499,
+      oneTime: 999,
       yearly: 1199,
       desc: "Ideal for growing businesses & service providers.",
       features: [
@@ -56,7 +56,7 @@ export default function WebsitePackagesPage() {
   ];
 
   const getPrice = (pkg: any) => {
-    if (billing === "oneTime") return `$${pkg.oneTime} (One-Time)`;
+    if (billing === "oneTime") return `$${pkg.oneTime}`;
     const discounted = Math.round(pkg.yearly * 0.85); // 15% OFF
     return `$${discounted} / year`;
   };
@@ -92,7 +92,7 @@ export default function WebsitePackagesPage() {
             Choose Your <span className="text-[#98792a]">Website Plan</span>
           </h2>
 
-          <div className="mt-8 inline-flex bg-white rounded-full shadow p-1">
+          {/* <div className="mt-8 inline-flex bg-white rounded-full shadow p-1">
             <button
               onClick={() => setBilling("oneTime")}
               className={`px-6 py-2 rounded-full font-semibold transition ${
@@ -113,7 +113,7 @@ export default function WebsitePackagesPage() {
             >
               Yearly <span className="ml-1 text-sm">(15% OFF)</span>
             </button>
-          </div>
+          </div> */}
 
           {/* PACKAGES */}
           <div className="grid lg:grid-cols-3 gap-10 mt-16">

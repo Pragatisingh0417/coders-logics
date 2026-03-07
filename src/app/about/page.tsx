@@ -79,7 +79,7 @@ Coders Logics delivers technology-driven innovation with measurable results.
      <About />
      <Hero />
      <MissionVision />
-      <Teamsection />
+      {/* <Teamsection /> */}
       <Portfolio />
       <GrowthCTA />
     </main>
