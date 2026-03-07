@@ -64,7 +64,7 @@ export function MobileTechStack() {
             </p>
 
             <div className="mt-6 flex items-center gap-2">
-              <img src="/appstore.svg" alt="App Store" className="h-10" />
+              <img src="/apple-store.png" alt="App Store" className="h-10" />
             </div>
           </div>
 
