@@ -89,28 +89,47 @@ export default function Footer() {
         </div>
 
         {/* CONTACT */}
-        <div className="md:col-span-2">
-          <h2 className="text-lg font-semibold mb-4 text-[#98792a]">Contact Us</h2>
-         <ul className="space-y-4 text-gray-300">
-  <li className="flex items-center gap-3 whitespace-nowrap">
-    <FaPhoneAlt className="text-[#98792a]" />
-    <span>+91 98765 43210</span>
-  </li>
+      <div className="md:col-span-2">
+  <h2 className="text-lg font-semibold mb-4 text-[#98792a]">
+    Contact Us
+  </h2>
 
-  <li className="flex items-center gap-3 break-all">
-    <MdEmail className="text-[#98792a]" />
-    <span>info@coderslogics.com</span>
-  </li>
+  <ul className="space-y-4 text-gray-300 text-sm sm:text-base">
 
-  <li className="flex items-start gap-3">
-    <MdLocationOn className="text-[#98792a] mt-1" />
-    <span>
-      Texas, Austin, TX 78701, USA
-    </span>
-  </li>
-</ul>
+    {/* Phone Numbers */}
+    <li className="flex items-start gap-3">
+      <FaPhoneAlt className="text-[#98792a] mt-1 shrink-0" />
+      <div className="flex flex-col">
+        <span>+44 6467 129499</span>
+        <span>+1 646 712 9499</span>
+        <span>+91 81144 19659</span>
+      </div>
+    </li>
 
-        </div>
+    {/* Email */}
+    <li className="flex items-start gap-3 break-all">
+      <MdEmail className="text-[#98792a] mt-1 shrink-0" />
+      <span>info@coderslogics.com</span>
+    </li>
+
+    {/* USA Address */}
+    <li className="flex items-start gap-3">
+      <MdLocationOn className="text-[#98792a] mt-1 shrink-0" />
+      <span>
+        Austin, Texas, TX 78701, USA
+      </span>
+    </li>
+
+    {/* India Address */}
+    <li className="flex items-start gap-3">
+      <MdLocationOn className="text-[#98792a] mt-1 shrink-0" />
+      <span>
+        413, Vatika, Jaipur, Rajasthan, India
+      </span>
+    </li>
+
+  </ul>
+</div>
       </div>
 
       {/* COPYRIGHT */}

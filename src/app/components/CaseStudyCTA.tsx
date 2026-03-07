@@ -30,7 +30,7 @@ export default function CaseStudyCTA() {
 
             <div className="mt-8 flex flex-row gap-4">
               <a
-                href="/case-studies"
+                href="/healthcare&homecare"
                 className="inline-flex items-center justify-center
                 px-8 py-4 rounded-full text-lg font-semibold
                 bg-gradient-to-r from-[#211e59] to-[#211e59]
