@@ -1,4 +1,3 @@
-@import "tailwindcss";
 
 .section-title {
   @apply text-4xl font-bold;
@@ -13,7 +12,4 @@
 }
 
 
-.badge {
-  @apply flex items-center gap-2 px-4 py-2 bg-white rounded-full
-  shadow text-sm font-medium text-gray-700;
-}
+

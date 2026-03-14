@@ -46,7 +46,7 @@ export default function WebsiteDevelopmentPage() {
 
             <p className="mt-6 text-base sm:text-lg text-gray-200 leading-relaxed">
               We craft high-performing, visually appealing, and conversion-driven
-              websites using modern technologies and proven development practices.
+              websites using modern technologies and proven development.
             </p>
 
             <div className="mt-8 flex flex-row gap-3 sm:gap-4">

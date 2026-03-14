@@ -87,7 +87,6 @@ export default function AboutPage() {
      <About />
      <Hero />
      <MissionVision />
-      {/* <Teamsection /> */}
       <Portfolio />
       <GrowthCTA />
     </main>
